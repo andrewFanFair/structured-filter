@@ -586,7 +586,7 @@ $.widget( 'evol.structFilter', {
 				'&operator-',i,'=',v.operator.value,
 				'&value-',i,'=',encodeURIComponent(v.value.value)
 			);
-			if(v.operator==evoAPI.sBetween){
+			if(v.operator.value==evoAPI.sBetween){
 				url.push('&value2-',i,'=',encodeURIComponent(v.value.value2));
 			}
 		}
